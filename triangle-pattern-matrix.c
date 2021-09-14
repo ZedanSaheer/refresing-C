@@ -8,13 +8,13 @@ void main(){
 
     for(i=0;i<m;i++){
         for(j=0;j<m;j++){
-            if(i=j)
+            if(i==j)
                 {
                     matrix[i][j]=0;
             }
              else if(i>j)
                 {
-                    matrix[i][j]=1;
+                    matrix[i][j]=-1;
              }
               else if(i<j)
                 {
@@ -22,7 +22,7 @@ void main(){
               }
         }
     }
-    printf("the array for given matrix is : \n");
+        printf("the array for given matrix is : \n");
      for(i=0;i<m;++i){
         for(j=0;j<m;++j){
                 printf("\t %d",matrix[i][j]);
